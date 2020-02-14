@@ -25,12 +25,10 @@ export default function Upload() {
     setLoading(true);
     ev.preventDefault();
 
-    const formData = new FormData(ev.target);
-    console.log(formData.get('name'));
-    console.log(formData.get('image'));
-    console.log(formData.get('avatar'));
-
-    fetch('/', { method: 'POST', body: formData })
+    fetch('/', {
+      method: 'POST',
+      body: new FormData(ev.target),
+    })
       .then(res => {
         if (!res.ok) throw new Error(res.statusText);
         return res.json();
