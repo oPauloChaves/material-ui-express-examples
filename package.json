@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "examples",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api:prod": "cd server && npm start",
+    "api:dev": "cd server && npm run dev",
+    "app": "cd client && npm start"
   },
   "keywords": [],
   "author": "",
