@@ -25,7 +25,7 @@ export default function Upload() {
     setLoading(true);
     ev.preventDefault();
 
-    fetch('/', {
+    fetch('/upload', {
       method: 'POST',
       body: new FormData(ev.target),
     })
