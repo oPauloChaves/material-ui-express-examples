@@ -1,0 +1,14 @@
+{
+  "name": "upload",
+  "version": "0.1.0",
+  "description": "examples",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}
